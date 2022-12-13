@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   background: #fcf9ef;
+  flex-wrap: wrap;
 }
 .nav-section1 {
   display: flex;
@@ -115,8 +116,133 @@
 .reason-section {
   text-align: center;
   padding: 78px 100px 50px;
-  background-color: brown;
+  background-image: url(./assets/reasonbackground.png);
+  position: relative;
 }
+.vanleft {
+  position: absolute;
+  left: 100px;
+  top: -64px;
+}
+.vanright {
+  position: absolute;
+  right: 100px;
+  top: -64px;
+}
+.services-section {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 84px;
+  padding-bottom: 140px;
+  gap: 20px;
+}
+.services-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.services-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+.service-1 {
+  max-width: 400px;
+  align-items: center;
+  border-bottom: 8px solid #e2b749;
+}
+.service-1-details {
+  text-align: center;
+}
+.service-1-details h2 {
+  padding: 33px 0 20px;
+}
+.intro-number-digit li {
+  padding: 20px 0 30px;
+}
+.service-paragraph {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0 43px;
+  color: #000000;
+}
+.service-card-h {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.service-intro-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+}
+.services-heading p {
+  font-family: "IM FELL Great Primer SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #e2b749;
+}
+.read-more {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.service-1-pic {
+  max-width: 400px;
+  height: 289px;
+}
+.service-2 {
+  max-width: 400px;
+  align-items: center;
+  border-bottom: 8px solid #e2b749;
+}
+.service-3 {
+  max-width: 400px;
+  align-items: center;
+  border-bottom: 8px solid #e2b749;
+}
+.service-1-pics-2 {
+  display: flex;
+  flex-direction: row;
+}
+.service-1a-pic {
+  max-width: 200px;
+}
+.services-2-divs {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(123, 113, 87, 0.89);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service-img {
+  position: relative;
+}
+
 .reason-section .reason-section-para {
   font-family: "IM FELL Great Primer SC";
   font-style: normal;
@@ -124,6 +250,7 @@
   font-size: 16px;
   line-height: 20px;
   /* identical to box height */
+  position: relative;
 
   color: #e2b749;
   padding-top: 10px;
@@ -138,18 +265,22 @@
   /* identical to box height */
   padding-bottom: 66px;
   color: #000000;
+  position: relative;
 }
 .cards {
   display: flex;
   gap: 20px;
+  position: relative;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .card {
   text-align: center;
   width: 190px;
   border-top: 1px solid #e2b749;
   border-bottom: 1px solid #e2b749;
-  padding: 20px 17px 48px;
   background-color: #fefefe;
+  padding: 21px 11px;
 }
 .card p {
   padding-top: 30px;
@@ -161,4 +292,417 @@
   text-align: center;
 
   color: #000000;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 76px;
+  padding-bottom: 20px;
+}
+.team-heading h2 b {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+
+  color: #e2b749;
+}
+.team-photos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 126px;
+}
+.team-photo-details {
+  align-items: center;
+  border-top: 4px solid #e2b749;
+  border-bottom: 4px solid #e2b749;
+  max-width: 400px;
+  padding: 22px 55px 22.5px 54px;
+  box-shadow: 10px 6px 24px rgba(0, 0, 0, 0.25);
+}
+.team-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 74px;
+  gap: 200px;
+}
+.team-setting p {
+  font-family: "IM FELL Great Primer SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #e2b749;
+}
+.team-area-text {
+  max-width: 300px;
+}
+.team-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 40px;
+}
+.team-number {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.team-contact h6 {
+  padding-bottom: 20px;
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+
+  color: #e2b749;
+}
+.intro-number-digit ul li {
+  list-style-type: none;
+  color: #000000;
+}
+.intro-number-digit ul {
+  list-style-image: url(./assets/cellphone.png);
+}
+.intro-number-digit b {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 34px;
+
+  color: #000000;
+}
+
+.service-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service-area h2 {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.team-area-pic {
+  width: 650px;
+  height: 482px;
+}
+.service-area-list {
+  width: 260px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.service-area-list ul li {
+  list-style-type: none;
+  font-size: 20px;
+}
+.service-area-list a {
+  text-decoration: none;
+  color: #000000;
+}
+.service-area-list ul {
+  list-style-image: url("./assets/truck.png");
+}
+.service-area-list ul li {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.video {
+  display: flex;
+  flex-direction: column;
+  padding: 76px 101px 100px 120px;
+  gap: 40px;
+  border-bottom: 8px solid #e2b749;
+  border-top: 8px solid #e2b749;
+}
+.video-text {
+  color: #e2b749;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 76px 132px;
+  gap: 34px;
+}
+.testimonial-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.testimonial-headings h1 {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+
+  color: #e2b749;
+}
+.testimonial-customers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.reviewed-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: center;
+  padding: 2px;
+  max-width: 568px;
+}
+.reviewed-testimonial-text {
+  text-align: center;
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #000000;
+}
+.reviewed-testimonial-ratting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.reviewed-testimonial-ratting p {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.reviewed-testimonial-ratting img {
+  padding-bottom: 10px;
+}
+.contact-section {
+  background-image: url("./assets/contact.png");
+  padding-top: 77px;
+  padding-bottom: 77px;
+}
+.contact-section-b {
+  padding-bottom: 70px;
+}
+.contact-section-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 750px;
+  padding-right: 101px;
+  gap: 8px;
+}
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+}
+.form-inline input {
+  vertical-align: middle;
+
+  padding: 10px;
+  color: #000000;
+  background-color: #fff;
+  border: 2px solid rgba(226, 183, 73, 1);
+}
+.form-text {
+  width: 220px;
+  border-radius: 15px;
+}
+.form-email {
+  width: 220px;
+  border-radius: 15px;
+}
+.form-text-service {
+  width: 450px;
+  border-radius: 15px;
+}
+.form-number {
+  width: 220px;
+  border-radius: 15px;
+}
+.form-textarea {
+  width: 450px;
+  height: 200px;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  border: 2px solid rgba(226, 183, 73, 1);
+}
+.form-btn {
+  margin-top: 32px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  border-color: #e2b749;
+  font-family: Arial;
+  color: white;
+  font-size: 20px;
+  background: #e2b749;
+  padding: 19px 20px 19px 20px;
+  text-decoration: none;
+}
+
+.form-btn:hover {
+  background: #d9c593;
+  text-decoration: none;
+}
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 72px;
+  background-color: #22202e;
+  color: white;
+  padding: 76px 94px 70px 100px;
+}
+.footer-company-brand-image {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  width: 310px;
+}
+.footer-logo-text {
+  size: 32px;
+}
+.footer-logo-text h4 b {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+.footer-column-1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contact ul li {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 34px;
+  /* identical to box height */
+  padding: 20px 0 10px;
+  color: #ffffff;
+}
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.footer-column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+.footer-column-2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  gap: 8px;
+  font-size: 20px;
+  flex-grow: 0;
+}
+.footer-column-2 a {
+  text-decoration: none;
+}
+.footer-column-2 ul li {
+  list-style: none;
+  color: white;
+}
+
+.footer-column-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  max-width: 186px;
+}
+.footer-column-3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  gap: 8px;
+  font-size: 20px;
+  flex-grow: 0;
+}
+.footer-column-3 a {
+  text-decoration: none;
+}
+.footer-column-3 ul li {
+  list-style: none;
+  color: white;
+}
+.footer-column-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-column-4 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 20px;
+  padding-left: 27px;
+}
+.footer-column-4 a {
+  text-decoration: none;
+}
+.footer-column-4 ul li {
+  color: white;
 }
