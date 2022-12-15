@@ -14,6 +14,24 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600;700&family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600;700&family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-container">
@@ -53,7 +71,7 @@
           <img src="./assets/Vector.png" alt="" />
           <h3>COMMITTED TO TOP QUALITY SERVICES</h3>
           <p>
-            Heating A/C, Water Heater & ETAC. Unit Repairing and Replacement
+            Heating & A/C, Water Heater & ETAC. Unit Repairing and Replacement
             Services
           </p>
           <div class="phone-number">
@@ -303,7 +321,7 @@
           <img src="./assets/Vector.png" alt="" width="32" height="32" />
           <h1>Testimonials</h1>
         </div>
-        <div class="testimonial-customers">
+        <div class="testimonial-customers slider">
           <div class="reviewed-testimonial">
             <div class="reviewed-testimonial-pic">
               <img src="./assets/t1.png" alt="" />
@@ -311,8 +329,7 @@
             <div class="reviewed-testimonial-text">
               <p>
                 This is Due to their Execellent Service, compatitive pricing and
-                customer support. its throughly refreshing to get such a
-                personal touch.
+                customer support.
               </p>
             </div>
             <div class="reviewed-testimonial-ratting">
@@ -320,20 +337,84 @@
               <p>Luke Cobbs</p>
             </div>
           </div>
+
           <div class="reviewed-testimonial">
             <div class="reviewed-testimonial-pic">
               <img src="./assets/t2.png" alt="" />
             </div>
             <div class="reviewed-testimonial-text">
               <p>
-                This is Due to their Execellent Service, compatitive pricing and
-                customer support. its throughly refreshing to get such a
-                personal touch.
+                Trust heating company Service is always very professional and
+                reliable. I've always had a positive experience with them.
               </p>
             </div>
             <div class="reviewed-testimonial-ratting">
               <img src="./assets/star.png" alt="" />
-              <p>jay Walters</p>
+              <p>Jay Walters</p>
+            </div>
+          </div>
+
+          <div class="reviewed-testimonial">
+            <div class="reviewed-testimonial-pic">
+              <img src="./assets/t3.png" alt="" />
+            </div>
+            <div class="reviewed-testimonial-text">
+              <p>
+                Awesome service from Trust Heating Company They were able to
+                come early, very professional. Highly recommended.
+              </p>
+            </div>
+            <div class="reviewed-testimonial-ratting">
+              <img src="./assets/star.png" alt="" />
+              <p>Lauren Burke</p>
+            </div>
+          </div>
+
+          <div class="reviewed-testimonial">
+            <div class="reviewed-testimonial-pic">
+              <img src="./assets/t4.png" alt="" />
+            </div>
+            <div class="reviewed-testimonial-text">
+              <p>
+                Specialist was very knowledgeable and competent of the task.
+                Overall Great Job! Thank You!
+              </p>
+            </div>
+            <div class="reviewed-testimonial-ratting">
+              <img src="./assets/star.png" alt="" />
+              <p>Chris Walters</p>
+            </div>
+          </div>
+
+          <div class="reviewed-testimonial">
+            <div class="reviewed-testimonial-pic">
+              <img src="./assets/t5.png" alt="" />
+            </div>
+            <div class="reviewed-testimonial-text">
+              <p>
+                Great, considerate, expedient, and professional service that
+                provided exactly what we needed great job!
+              </p>
+            </div>
+            <div class="reviewed-testimonial-ratting">
+              <img src="./assets/star.png" alt="" />
+              <p>Jacob Dumford</p>
+            </div>
+          </div>
+
+          <div class="reviewed-testimonial">
+            <div class="reviewed-testimonial-pic">
+              <img src="./assets/t6.png" alt="" />
+            </div>
+            <div class="reviewed-testimonial-text">
+              <p>
+                The technician was very professional and courteous. He showed me
+                exactly what he was doing.
+              </p>
+            </div>
+            <div class="reviewed-testimonial-ratting">
+              <img src="./assets/star.png" alt="" />
+              <p>Joshua McElwee</p>
             </div>
           </div>
         </div>
@@ -462,5 +543,50 @@
         </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(".slider").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
   </body>
 </html>
