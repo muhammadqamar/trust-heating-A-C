@@ -28,8 +28,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600;700&family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -39,11 +48,21 @@
         <div class="nav-section1">
           <div class="navlogo-img">
             <img src="./assets/Group 54.png" alt="" />
-            <h1>TRUST HEATING & A/C SERVICES LLC</h1>
+            <h1><b>TRUST HEATING & A/C SERVICES LLC</b></h1>
           </div>
-          <div class="image-phone">
-            <img src="./assets//mobileicon.png" alt="" />
-          </div>
+          <section class="top-nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+            <ul class="menu">
+              <li>Home</li>
+              <li>Services</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </section>
         </div>
 
         <div class="nav-setion2">
@@ -56,9 +75,9 @@
             <a href="">CONTACT</a>
           </div>
           <div class="social-links">
-            <a href=""><img src="./assets/Group 4.png" alt="" /></a>
-            <a href=""><img src="./assets/Group 3.png" alt="" /></a>
-            <a href=""><img src="./assets/Group 5.png" alt="" /></a>
+            <a href=""><img src="./assets/Group 4 (1).png" alt="" /></a>
+            <a href=""><img src="./assets/Group 3 (1).png" alt="" /></a>
+            <a href=""><img src="./assets/Group 5 (1).png" alt="" /></a>
           </div>
         </div>
         <div class="nav-section3">
@@ -225,10 +244,7 @@
           </div>
           <div class="card">
             <img src="./assets/Mask group (1).png" alt="" />
-            <p>
-              Parts <br />
-              Warranty
-            </p>
+            <p>Part Warranty</p>
           </div>
           <div class="card">
             <img src="./assets/Group.png" alt="" />
@@ -328,8 +344,8 @@
             </div>
             <div class="reviewed-testimonial-text">
               <p>
-                This is Due to their Execellent Service, compatitive pricing and
-                customer support.
+                Highly recommended. This is Due to their Execellent Service,
+                compatitive pricing and customer support.
               </p>
             </div>
             <div class="reviewed-testimonial-ratting">
@@ -427,7 +443,7 @@
             <p style="color: #e2b749; font-size: 16px; padding: 20px 0 10px">
               Book appointment
             </p>
-            <h1 class="contact-section-b"><b>Get Quote</b></h1>
+            <h1 class="contact-section-b"><b>Get a Quote</b></h1>
           </div>
           <div class="contact-form">
             <form class="form-inline" action="">
@@ -468,7 +484,7 @@
               ></textarea>
               <br />
               <button class="form-btn" type="submit">
-                Request a quoate now
+                Request a quote now
               </button>
             </form>
           </div>
@@ -487,7 +503,7 @@
               />
             </div>
             <div class="footer-logo-text">
-              <h4><b>TRUST HEATING & A/C SERVICES LLC</b></h4>
+              <h4>TRUST HEATING & A/C SERVICES LLC</h4>
             </div>
           </div>
           <div class="footer-contact">
@@ -554,7 +570,7 @@
     <script type="text/javascript">
       $(".slider").slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
         slidesToShow: 2,
         slidesToScroll: 2,
